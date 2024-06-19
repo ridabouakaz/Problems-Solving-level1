@@ -1,21 +1,19 @@
 #include<iostream>
+#include <string>
+#include<array>
+#include<vector>
 using namespace std;
-//crated function calcul modulo number for know if number  even number
-int Simplemultiplication(int num1) {
-	if (num1%2==0)
-	{
-		cout << num1 * 8;
+// function check if any character lowercase and give false in finding
+int  ALLCAPS(string word) {
+	for (int i = 0; i < word.size(); i++)
+	{if (islower(word[i]))
+		{
+			 return false;
+		}
 	}
-	else
-	{
-		cout << num1 * 9;
-	}
-	return 0;
+	return true;
 }
 int main() {
-	int num1 = 20;
-	cout<<Simplemultiplication(num1);
-
+	cout<< ALLCAPS("RIDAa");
 	return 0;
 }
-//This kata is about multiplying a given number by eight if it is an even number and by nine otherwise.
