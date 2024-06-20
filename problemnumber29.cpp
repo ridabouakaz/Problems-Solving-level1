@@ -4,22 +4,22 @@
 #include<vector>
 using namespace std;
 // function contains loop for plus number with other , in final division on sum to value to array
-int     averageofthenumbers(vector<int> numbers) {
+double     averageofthenumbers(vector<int> numbers) {
 	if (numbers.size() == 0)
 	{
 		cout << "0";
 	}
-	int result = 1;
+	double result = 1;
 	for (int i = 0; i < numbers.size(); i++)
 	{
 		result += numbers[i];
 	}
-	int resulttotal = result / numbers.size();
+	double resulttotal = result / numbers.size();
 	cout << resulttotal;
 
 	return 0;
 }
-int main() {
+double main() {
 	averageofthenumbers({});
 	return 0;
 }
